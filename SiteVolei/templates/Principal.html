@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ Titulo }}</title>
+    <link rel="stylesheet" href="static/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img src="/static/logoVolei-removebg-preview.png" class="logo">
+        <a href="/Cadastro" class="redirect">Cadastro</a>
+    </header>
+
+    <main class="mainP">
+         <div class="p1">
+            <h1 class="title">{{ Titulo }}</h1>
+        </div>
+
+        {% for jogadores in listajog %}
+
+        <div class="divCards">
+            <div class="player-card">
+                <img src="/static/Miguel.jpg" class="img-miguel">
+                <div class="uniao">
+                    <h2>Nome: {{ jogadores.nome }}</h2>
+                    <h2>Idade: {{ jogadores.idade }}</h2>
+                </div>
+                <div class="uniao">
+                    <h2>Posição: {{ jogadores.posicao }}</h2>
+                    <h2>Experiência: {{ jogadores.experiencia }}</h2>
+                </div>
+                <div class="uniao">
+                    <h2>Cidade: {{ jogadores.cidade }}</h2>
+                    <h2>Estado: {{ jogadores.estado }}</h2>
+                </div>
+                <div class="uniao">
+                    <h2>Dias: {{ jogadores.dias }}</h2>
+                    <h2>Horário: {{ jogadores.hora }}</h2>
+                </div>
+                <br>
+            </div>
+        {% endfor %}
+        </div>
+    </main>
+
+    <footer class="footer">
+        <img src="/static/logoVolei-removebg-preview.png" class="logo">
+        <p class="redirect">Por:Henri</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ Titulo }}</title>
+    <link rel="stylesheet" href="static/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img src="/static/logoVolei-removebg-preview.png" class="logo">
+        <a href="/Principal" class="redirect">Início</a>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="page-title">
+                <h1 class="title">{{ Titulo }}</h1>
+            </div>
+            <form action="/Criar" method="post">
+                <div class="form-group">
+                    <div class="componente">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Ex:Yasmin" class="inputs">
+                    </div>
+
+                    <div class="componente">
+                        <label for="idade" class="l">Idade:</label>
+                        <input type="number" id="idade" name="idade" placeholder="Ex:24" class="inputs">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="componente">
+                        <label for="posicao">Posição:</label>
+                        <input type="text" id="posicao" name="posicao" placeholder="Ex:Pivô" class="inputs">
+                    </div>
+
+                    <div class="componente">
+                        <label for="experiencia" class="l">Experiência:</label>
+                        <input type="number" id="experiencia" name="experiencia" placeholder="Ex:3(anos)" class="inputs">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="componente">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" placeholder="Ex:Birigui" class="inputs">
+                    </div>
+
+                    <div class="componente">
+                        <label for="estado" class="l">Estado:</label>
+                        <input type="text" id="estado" name="estado" placeholder="Ex:SP" class="inputs">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="componente">
+                        <label for="dias">Dias disponíveis:</label>
+                        <input type="text" id="dias" name="dias" placeholder="Ex:Segunda" class="inputs">
+                    </div>
+
+                    <div class="componente">
+                        <label for="hora" class="l">Horário:</label>
+                        <input type="text" id="hora" name="hora" placeholder="Ex:16-17" class="inputs">
+                    </div>
+                </div>
+                <button type="submit" class="salvar">Salvar</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

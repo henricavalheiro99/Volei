@@ -1,0 +1,230 @@
+:root{
+    --header: #040404;
+    --cinza: #696969;
+    --claro: #adadad
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    flex-wrap: wrap;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header,
+.footer{
+    background-color: var(--header);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo{
+    height: 100px;
+    width: 105px;
+    padding-left: 10px;
+    transition: 0.8s;
+}
+
+.logo:hover{
+    animation: logogira 1s;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+@keyframes logogira {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate( 360deg);
+    }
+}
+
+.redirect{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 20px;
+    color: #fff;
+    transition: 0.8s;
+}
+
+.redirect:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+.title{
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.main{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--claro);
+}
+
+.mainP{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--claro);
+}
+
+.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 600px;
+    min-height: 530px;
+    padding: 10px;
+    border-radius: 30px;
+    background: var(--cinza);
+    box-shadow: 10px 10px 20px #d2d2d2,
+                -10px -10px 20px #d2d2d2;
+}
+
+form label {
+    font-size: 20px;
+    color: var(--claro);
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.form-group{
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.inputs {
+    display: block;
+    margin-top: 10px;
+    height: 25px;
+    line-height: 22px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.inputs:focus, .input:hover{
+    outline: none;
+    border-color: var(--claro);
+    background-color: #fff;
+    box-shadow: 0 0 0 2px var(--header);
+}
+
+.componente {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.salvar{
+    font-weight: bold;
+    font-size: 16px;
+    padding: 7px;
+    padding-right: 11px;
+    padding-left: 11px;
+    margin-left: 5px;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: #fff;
+    color: var(--header);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.salvar:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+    background-color: #ececec;
+}
+
+/*------------------------------------------------------------------------*/
+
+.player-card {
+    background: var(--cinza);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 330px;
+    margin: 10px;
+    transition: 0.8s;
+    color: var(--claro);
+    margin-bottom: 30px;
+}
+
+.player-card:hover{
+    transform: scale(1.05);
+    transition: 0.8s;
+    background-color: var(--cinza);
+}
+
+
+.img-miguel{
+    max-width: 220px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.p1{
+    padding-bottom: 40px;
+}
+
+.uniao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.player-card h2{
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.divCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+*::-webkit-scrollbar {
+    width: 14px; /* Largura da barra de rolagem */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+     /* Cor do polegar da barra de rolagem (parte que você arrasta) */
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #000000;
+     /* Cor da pista da barra de rolagem (fundo) */
+}
+
+
